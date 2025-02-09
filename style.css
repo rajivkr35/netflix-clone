@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    width: 100vw;
+    background-image: url(assets/images/bg.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1800px, 100vw);
+    height: 90vh;
+    position: relative;
+}
+
+.main .opacity {
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.72;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 5px;
+}
+
+nav img {
+    color: rgba(45, 4, 4, 0.22);
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.option {
+    padding: 5px 20px;
+    font-size: 18px;
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: red;
+    padding: 3px 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.lan-sign {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    font-family: "Martel Sans", sans-serif;
+    height: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+    padding: 0 30px;
+
+}
+
+.box> :nth-child(1) {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-align: center;
+}
+
+.box> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.box> :nth-child(3) {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.input-button button {
+    background-color: rgb(225, 16, 16);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.input-button input {
+    font-weight: 300;
+    padding: 10px 124px 13px 6px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+}
+
+.separation {
+    height: 9px;
+    background-color: rgb(55, 51, 51);
+}
+
+.input-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.container1 {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.TV-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    height: 500px;
+    max-width: 75vw;
+    margin: auto;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+@media screen and (max-width:800px){
+    body{
+        background-color: red;
+    }
+    .media{
+        flex-wrap: wrap;
+    }
+    .img-text{
+        width: fit-content;
+    }
+    .container2{
+        height: 1000px;
+    }
+} 
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+}
+
+.text :nth-child(1) {
+    font-size: 43px;
+    font-weight: 700;
+    padding: 21px 20px 2px 0px;
+}
+
+.text :nth-child(2) {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.imgvid {
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgvid img {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+}
+
+.imgvid video {
+    position: absolute;
+    right: 70px;
+    top: 45px;
+    width: 330px;
+    /* height: 500px; */
+}
+
+.container2 {
+    height: 500px;
+    width: 100vw;
+}
+
+.text2 {
+    font-size: 23px;
+    color: white;
+}
+
+.img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.text2 :nth-child(1) {
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.text2 :nth-child(2) {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.mobile {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile img {
+    width: 500px;
+    /* position: relative; */
+}
+
+.card {
+    border: 1px solid white;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 10;
+    height: 100px;
+    width: 350px;
+    bottom: 12%;
+    left: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    gap: 30px;
+}
+
+.card img {
+    width: 50px;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.down :nth-child(1) {
+    color: white;
+    font-size: 16px;
+}
+
+.down :nth-child(2) {
+    color: blue;
+    font-size: 14px;
+
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-card {
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.container3 {
+    height: 500px;
+    width: 100vw;
+}
+
+.imgtext2 {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.appletv {
+    position: relative;
+}
+
+.appletv img {
+    width: 500px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.appletv video {
+    width: 300px;
+    position: absolute;
+    bottom: 143px;
+    right: 79px;
+    zoom: 110%;
+}
+.container4{
+    height: 500px;
+}
+.children {
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.childimg img {
+    width: 600px;
+}
+
+.FAQ {
+    width: 100vw;
+    height: 1000px;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.question{
+    font-size: 50px;
+    font-weight: 900;
+    padding: 60px 0px 20px 0px;
+}
+.boxes{
+    :hover{
+        background-color: rgb(72, 69, 69);
+    }
+}
+.faq {
+    background-color: rgb(48, 46, 46);
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.boxes1 {
+    width: 75vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+
+.boxes2 {
+    width: 75vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+
+.boxes3 {
+    width: 75vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+
+.boxes4 {
+    width: 75vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+
+.boxes5 {
+    width: 75vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+
+.boxes6 {
+    width: 75vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+.boxes img{
+    width: 35px;
+    padding-right: 20px;
+}
+.ready{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.footer{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-container{
+    height: 300px;
+    width: 80vw;
+    /* background-color: red; */
+    
+}
+.foot-line{
+    display: grid;
+    row-gap: 15px;
+    
+}
+.line{
+    color: rgb(187, 184, 184);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* cursor: pointer; */
+    text-decoration: underline;
+}
+.line span{
+    cursor: pointer;
+    width: fit-content;
+}
+.line1{
+    text-decoration: none;
+    color: rgb(187, 184, 184);;
+}
+.number{
+    text-decoration: underline;
+}
+.line6{
+    width: 140px;
+    color: rgb(187, 184, 184);
+    text-decoration: none;
+}
+.line7{
+    text-decoration: none;
+}
